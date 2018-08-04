@@ -9,7 +9,7 @@ import json, requests, LineService,os,sys,subprocess,traceback,os.path,time,huma
 
 with open('user.json', 'r') as fp:
     wait = json.load(fp)
-ditdit = LineClient(authToken='Ev7NsZpbtAStY3iwZXT3.m7QAK9mmg/fv3Yt11op1GW.ndlfVGqRprpqG64XDjtVS8Go/7Xa+eWUzobUAWvthyk=')
+ditdit = LineClient(authToken='Ev9lMVGIBDEFEqwhqcJ6.nLjIV2bjs0bICuBwl5X0fG.5qWDGJbwpIh6PY9UDfxn6iD3p1yjWZo0O8NBsTWixGg=')
 poll = LinePoll(ditdit)
 
 datagame = {
