@@ -19,7 +19,7 @@ class Config(object):
     LINE_SQUARE_QUERY_PATH      = '/SQS1'
 
     CHANNEL_ID = {
-        'LINE_TIMELINE': '1341209950',
+        'LINE_TIMELINE': '1341209850',
         'LINE_WEBTOON': '1401600689',
         'LINE_TODAY': '1518712866',
         'LINE_STORE': '1376922440',
