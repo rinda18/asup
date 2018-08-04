@@ -11,13 +11,13 @@ from subprocess import Popen, PIPE
 
 ### LOGIN SETTING DISINI ###
 #Hans = LINE()
-Hans = LINE("Ev7NsZpbtAStY3iwZXT3.m7QAK9mmg/fv3Yt11op1GW.ndlfVGqRprpqG64XDjtVS8Go/7Xa+eWUzobUAWvthyk=")##LOGIN LEWAT TOKEN           
+Hans = LINE("Ev9lMVGIBDEFEqwhqcJ6.nLjIV2bjs0bICuBwl5X0fG.5qWDGJbwpIh6PY9UDfxn6iD3p1yjWZo0O8NBsTWixGg=")##LOGIN LEWAT TOKEN           
 
 
 Hans.log("Auth Token : " + str(Hans.authToken))
 
 ### SETTINGAN INFO ###
-admin = ['u504305ce649823fa9084b743983b40ac']
+admin = ['uac8e3eaf1eb2a55770bf10c3b2357c33']
 HansMID = Hans.profile.mid
 mid = Hans.getProfile().mid
 HansProfile = Hans.getProfile()
@@ -40,7 +40,7 @@ myProfile["pictureStatus"] = HansProfile.pictureStatus
 ### KUMPULAN DEF ##
 
 def restartBot():
-    print (">Hans SELFBOT TELAH DI RESTART<")
+    print (">SELFBOT TELAH DI RESTART<")
     backupData()
     time.sleep(1)
     python = sys.executable
@@ -81,7 +81,7 @@ def lineBot(op):
             return
         if op.type == 5:
             print ("INFO SELBOT : ADA YANG ADD")
-            Hans.sendMessage(op.param1, "Psdbots v1.55\nThanks to {} sudah add saya".format(str(Hans.getContact(op.param1).displayName)))
+            Hans.sendMessage(op.param1, "Thanks to {} sudah add saya".format(str(Hans.getContact(op.param1).displayName)))
         if op.type == 13:
             print ("INFO SELBOT : ADA YANG INVITE GRUP")
             group = Hans.getGroup(op.param1)
@@ -101,7 +101,7 @@ def lineBot(op):
                 if text is None:
                     return
                 elif text.lower() == 'help':
-                    Hans.sendMessage(to, "Psdbots v1.55\n1. psd login \n2. psd logout \n3. psd screen \n4. psd dirz \n5. restart \n6. speed \n7. about \n8. runtime \n9. errorlog\nNext command:\n10. login done")
+                    Hans.sendMessage(to, "1. psd login \n2. psd logout \n3. psd screen \n4. psd dirz \n5. restart \n6. speed \n7. about \n8. runtime \n9. errorlog\nNext command:\n10. login done")
 
 ### BOT MENU COMMAND ###
 
